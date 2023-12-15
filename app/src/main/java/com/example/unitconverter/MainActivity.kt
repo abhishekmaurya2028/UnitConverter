@@ -103,11 +103,13 @@ fun UnitConverter(){
             OutlinedTextField(value = inputValue,
                 onValueChange = {
                     inputValue = it
+                    //it will directly render the function on UI
                     convertUnit()
                     //here goes what should happen , when
                     // the value of OutLineTextField changes
                 },
                 label ={ Text(text = "Enter Value")})
+
             Spacer(modifier = Modifier.height(16.dp))
 
             Row {
